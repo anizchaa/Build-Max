@@ -22,12 +22,7 @@ const Footer = () => {
           <h4>Newsletter</h4>
           <p>Stay updated with our lates offers</p>
           <input type='email' placeholder='your.address@email.com' />
-          <Button
-            btnName='Subscribe'
-            type='submit'
-            pad='10px 100px'
-            fntSize='16px'
-          />
+          <Button btnName='Subscribe' type='submit' fntSize='16px' />
         </div>
         <div className='fright' data-aos='fade-left'>
           <h4>Follow us</h4>

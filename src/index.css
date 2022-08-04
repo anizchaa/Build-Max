@@ -7,10 +7,6 @@
   font-family: 'Poppins';
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 /*Nav bar*/
 
 .navBar {
@@ -366,9 +362,13 @@ h3 {
   margin: 0 50px;
 }
 
-.fmid input {
-  padding: 10px 56px;
-  margin: 17px 0;
+.fmid input,
+.fmid button {
+  text-align: center;
+  width: 300px;
+  padding: 10px 0;
+  display: block;
+  margin-top: 20px;
 }
 
 .fright ul {
@@ -614,7 +614,7 @@ h3 {
     position: fixed;
     top: 0;
     height: 80px;
-    width: 100%;
+    width: 100vw;
     background-color: #e2b84c;
     z-index: 1;
   }
@@ -700,7 +700,7 @@ h3 {
   }
 
   .aright h2 {
-    line-height: 3;
+    margin-top: 20px;
   }
 
   .aesthetic p {
@@ -799,6 +799,10 @@ h3 {
 
   .gridImages img {
     height: 100px;
+  }
+
+  .project {
+    width: 100%;
   }
 
   .footer {
