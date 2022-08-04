@@ -1,8 +1,6 @@
-import React from 'react'
-
-const Service = ({ svg, name, description }) => {
+const Service = ({ svg, name, description, direction }) => {
   return (
-    <div className='service'>
+    <div className='service' data-aos={direction}>
       {svg}
       <h4>{name}</h4>
       <p>{description}</p>

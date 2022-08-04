@@ -6,7 +6,13 @@ const Aesthetic = () => {
   return (
     <div className='aesthetic'>
       <div className='atop'>
-        <img src={imgtop} height='500' width='650' alt='interior design' />
+        <img
+          src={imgtop}
+          height='500'
+          width='650'
+          alt='interior design'
+          data-aos='fade-right'
+        />
         <div className='aright'>
           <h2>Aesthetically pleasing.</h2>
           <p>
@@ -27,7 +33,13 @@ const Aesthetic = () => {
           </p>
           <Button btnName='Learn More' pad='10px 65px' />
         </div>
-        <img src={imgbot} height='500' width='650' alt='interior design' />
+        <img
+          src={imgbot}
+          height='500'
+          width='650'
+          alt='interior design'
+          data-aos='fade-left'
+        />
       </div>
     </div>
   )

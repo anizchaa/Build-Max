@@ -77,6 +77,7 @@ const ServicesData = [
     ),
     name: 'Retail-Fit Out & Carpentry',
     description: 'Lorem ipsum dolor sit amet consect etur',
+    direction: 'fade-right',
   },
   {
     id: 2,
@@ -203,6 +204,7 @@ const ServicesData = [
     ),
     name: 'interior & space planing',
     description: 'Lorem ipsum dolor sit amet consect etur',
+    direction: 'fade-left',
   },
 ]
 

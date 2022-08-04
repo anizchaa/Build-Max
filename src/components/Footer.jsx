@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className='ftop'>
-        <div className='fleft'>
+        <div className='fleft' data-aos='fade-right'>
           <h4>About the company</h4>
           <div className='line'></div>
           <p>
@@ -29,7 +29,7 @@ const Footer = () => {
             fntSize='16px'
           />
         </div>
-        <div className='fright'>
+        <div className='fright' data-aos='fade-left'>
           <h4>Follow us</h4>
           <ul>
             <li>
@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
       <div className='fbot'>
         © BUildMax Limited | ALL Rights Reserved | 2019
-        <ul className='navBar'>
+        <ul className='navBar bot'>
           <li>
             <Link to='/'>Home</Link>
           </li>

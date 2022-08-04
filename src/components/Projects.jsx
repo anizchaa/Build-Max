@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <>
       <h3>Our Latest Projects</h3>
-      <div className='projects'>
+      <div className='projects' data-aos='fade-up'>
         {projects.map((project) => {
           return (
             <Project key={project.id} title={project.title} url={project.url} />

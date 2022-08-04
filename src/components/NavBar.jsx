@@ -3,6 +3,10 @@ import Button from '../shared/Button'
 import { useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { ImCross } from 'react-icons/im'
+import { FaFacebookF } from 'react-icons/fa'
+import { BsInstagram } from 'react-icons/bs'
+import { BsTwitter } from 'react-icons/bs'
+import { BiVideo } from 'react-icons/bi'
 
 const NavBar = () => {
   const [active, setActive] = useState(false)
@@ -32,10 +36,16 @@ const NavBar = () => {
             <Button btnName='Get A Quote' pad='6px 10px 8px' fntSize='16px' />
           </Link>
         </li>
+        <li className='socials'>
+          <FaFacebookF className='social nav' size={25} />
+          <BsTwitter className='social nav' size={25} />
+          <BsInstagram className='social nav' size={25} />
+          <BiVideo className='social nav' size={30} />
+        </li>
       </ul>
 
       <GiHamburgerMenu
-        className='hamburger'
+        className={active ? 'hamburger active' : 'hamburger'}
         size={30}
         onClick={() => setActive(true)}
       />

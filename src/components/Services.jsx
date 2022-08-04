@@ -14,6 +14,7 @@ const Services = () => {
               svg={service.svg}
               name={service.name}
               description={service.description}
+              direction={service.direction}
             />
           )
         })}

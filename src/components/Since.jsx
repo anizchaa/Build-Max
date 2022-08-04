@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const Since = () => {
   return (
     <div className='since'>
-      <div className='sleft'>
+      <div className='sleft' data-aos='fade-right'>
         <h2>Since we Started work in 1900</h2>
         <Link to='/quality' className='orange'>
           <div className='line'></div>
@@ -75,7 +75,7 @@ const Since = () => {
         </defs>
       </svg>
 
-      <div className='sright'>
+      <div className='sright' data-aos='fade-left'>
         <p>
           We have worked on some of the stunning architectural marvels within
           industries like hotels, residential buildings, offices, commercial
