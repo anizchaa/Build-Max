@@ -699,6 +699,10 @@ h3 {
     width: 100%;
   }
 
+  .aright h2 {
+    line-height: 3;
+  }
+
   .aesthetic p {
     text-align: center;
     padding: 0 50px;
