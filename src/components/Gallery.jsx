@@ -18,10 +18,12 @@ const Gallery = () => {
           There are many variations.
         </p>
       </div>
-      <div className='gridImages'>
-        {gimages.map((g) => {
-          return <Grids key={g.id} url={g.url} />
-        })}
+      <div className='gbot'>
+        <div className='gridImages'>
+          {gimages.map((g) => {
+            return <Grids key={g.id} url={g.url} />
+          })}
+        </div>
       </div>
     </div>
   )

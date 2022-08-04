@@ -1,10 +1,20 @@
 import { Link } from 'react-router-dom'
 import Button from '../shared/Button'
+import { useState } from 'react'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { ImCross } from 'react-icons/im'
 
 const NavBar = () => {
+  const [active, setActive] = useState(false)
   return (
     <>
-      <ul className='navBar'>
+      <div className='forHam'></div>
+      <ul className={active ? 'navBar active' : 'navBar'}>
+        <ImCross
+          className='crossham'
+          size={20}
+          onClick={() => setActive(false)}
+        />
         <li>
           <Link to='/'>Home</Link>
         </li>
@@ -23,6 +33,12 @@ const NavBar = () => {
           </Link>
         </li>
       </ul>
+
+      <GiHamburgerMenu
+        className='hamburger'
+        size={30}
+        onClick={() => setActive(true)}
+      />
     </>
   )
 }
